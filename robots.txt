@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jinalcollection.in/sitemap.xml
+
+# Block access to any private directories if added later
+Disallow: /private/
+Disallow: /admin/
