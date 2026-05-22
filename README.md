@@ -1,89 +1,159 @@
-# Jinal Collection – Official Website
+# 🧵 Jinal Collection — Premium Fabric Website
 
-> Premium Suiting & Shirting fabric store based at **Mangaldas Market, Mumbai**.  
-> Website: [jinalcollection.in](https://jinalcollection.in)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
+![Custom Domain](https://img.shields.io/badge/Domain-jinalcollection.in-gold?style=flat)
+![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=flat&logo=google&logoColor=white)
+![SEO](https://img.shields.io/badge/SEO-Optimised-brightgreen?style=flat)
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=flat)
 
----
+> ⭐ **Freelance Client Project** — Real business, real domain, real deployment.
 
-## About
-
-This is the official static website for **Jinal Collection**, a trusted wholesale & retail supplier of premium suiting and shirting fabrics. The site showcases the product range, business details, and a WhatsApp-integrated contact form.
-
----
-
-## Tech Stack
-
-- **HTML5** – Semantic markup
-- **CSS3** – Custom styles (`style.css`)
-- **Vanilla JavaScript** – Interactions (`script.js`)
-- **Netlify** – Hosting & deployment (`netlify.toml`)
-- **Google Fonts** – Cormorant Garamond + DM Sans
+A fully responsive business website built for **Jinal Collection**, a premium suiting and shirting fabric supplier based at Mangaldas Market, Mumbai. Built with pure HTML, CSS and JavaScript — deployed on Netlify with a custom domain, production-grade security headers, SEO optimisation, sitemap, and WhatsApp contact integration.
 
 ---
 
-## Project Structure
+## 🌐 Live Website
+
+**[https://www.jinalcollection.in](https://www.jinalcollection.in)**
+
+---
+
+## 📸 Preview
+
+![Jinal Collection Banner](og-image.jpg)
+
+---
+
+## ✨ Features
+
+- Sticky navbar — transparent to solid gold on scroll
+- Mobile hamburger menu with body scroll lock
+- Product category tabs — Suiting, Shirting, and more
+- Scroll reveal animations via `IntersectionObserver`
+- Animated stat counters (eased cubic animation using `requestAnimationFrame`)
+- Contact form with real-time validation — Indian phone number regex
+- **WhatsApp integration** — form submits directly to WhatsApp chat
+- Custom 404 page with WhatsApp fallback button
+- SEO optimised — meta tags, Open Graph, `sitemap.xml`, `robots.txt`
+- Favicon set — ico, 32×32, 192×192, Apple touch icon
+- Deployed on **Netlify** with custom domain `jinalcollection.in`
+- WWW → non-WWW redirect (301)
+- HTTP → HTTPS redirect (301)
+- Production security headers — HSTS, X-Frame-Options, XSS Protection
+- Aggressive asset caching — CSS/JS/images cached for 1 year
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|---|---|
+| HTML5 | Semantic structure, SEO meta tags, Open Graph |
+| CSS3 | Variables, Grid, Flexbox, animations, scroll reveal |
+| JavaScript (ES6+) | Navbar, tabs, counters, form validation, WhatsApp |
+| Google Fonts | Cormorant Garamond + DM Sans |
+| Netlify | Hosting, custom domain, redirects, security headers |
+| `netlify.toml` | Redirect rules, cache headers, security config |
+
+---
+
+## 🧠 JavaScript Features
+
+- `IntersectionObserver` — scroll reveal animations & counter triggers
+- `requestAnimationFrame` — smooth eased counter animation (cubic ease-out)
+- `encodeURIComponent` — WhatsApp message URL encoding
+- Real-time form validation — `blur` + `input` events
+- Indian mobile number regex: `/^[6-9]\d{9}$/`
+- `performance.now()` — precise animation timing
+- `window.scrollY` — scroll-triggered navbar state
+- Smooth scroll with navbar height offset using CSS variable `--nav-h`
+- `DOMContentLoaded` — modular function initialisation
+
+---
+
+## 🔍 SEO & Performance
+
+- `sitemap.xml` — submitted to Google Search Console
+- `robots.txt` — allows all crawlers, blocks private paths
+- Open Graph meta tags — rich preview on WhatsApp & social shares
+- `og-image.jpg` — custom OG image for link previews
+- Favicon set — all sizes including Apple touch icon
+- HTML `Cache-Control: no-cache` — always fresh content
+- CSS/JS/Images `Cache-Control: max-age=31536000, immutable` — 1 year cache
+- HSTS — `Strict-Transport-Security: max-age=31536000`
+
+---
+
+## 🔒 Security Headers (via Netlify)
+
+```
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: camera=(), microphone=(), geolocation=()
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+```
+
+---
+
+## 📁 Project Structure
 
 ```
 jinal-collection/
-├── index.html          # Main homepage
-├── 404.html            # Custom 404 error page
+├── index.html          # Main page
+├── 404.html            # Custom not-found page
 ├── style.css           # All styles
-├── script.js           # JS: navbar, tabs, counters, form, WhatsApp
-├── netlify.toml        # Netlify config (redirects, headers, caching)
-├── robots.txt          # SEO crawler rules
-├── sitemap.xml         # Sitemap for search engines
+├── script.js           # All JavaScript
+├── sitemap.xml         # SEO sitemap
+├── robots.txt          # Search crawler rules
+├── netlify.toml        # Netlify config — redirects, headers, cache
 ├── favicon.ico         # Browser tab icon
-├── favicon-32x32.png   # Favicon (32px)
-├── favicon-192x192.png # Favicon (192px)
+├── favicon-32x32.png   # 32px favicon
+├── favicon-192x192.png # Android icon
 ├── apple-touch-icon.png# iOS home screen icon
-├── og-image.jpg        # Open Graph / social share image
-└── README.md           # This file
+├── og-image.jpg        # Open Graph social preview image
+└── README.md
 ```
 
 ---
 
-## Features
+## 🚀 Deployment
 
-- Responsive design (mobile-first)
-- Sticky navbar with hamburger menu
-- Product category tabs
-- Scroll reveal animations
-- Animated stat counters
-- Contact form with WhatsApp integration
-- Custom 404 page
-- SEO optimised (sitemap, robots.txt, OG tags)
-- Security & cache headers via Netlify
+Deployed on **Netlify** with a custom domain.
 
----
-
-## Local Development
-
-No build tools needed. Just open `index.html` in your browser, or use VS Code's **Live Server** extension:
-
-1. Install the **Live Server** extension in VS Code
-2. Right-click `index.html` → **Open with Live Server**
-3. Site opens at `http://127.0.0.1:5500`
+```
+Live URL:  https://www.jinalcollection.in
+Platform:  Netlify
+Domain:    jinalcollection.in (custom, paid)
+Redirects: WWW → non-WWW (301), HTTP → HTTPS (301)
+```
 
 ---
 
-## Deployment (Netlify)
+## 📞 Business Details
 
-This site is deployed on **Netlify** with the configuration in `netlify.toml`.
-
-To deploy your own copy:
-1. Push this repo to GitHub
-2. Go to [netlify.com](https://netlify.com) → **Add new site** → **Import from Git**
-3. Select this repo → Set publish directory to `.` → Deploy
-
----
-
-## Contact
-
-**Jinal Collection**  
-Mangaldas Market, Mumbai, Maharashtra, India  
-📞 WhatsApp: [+91 83694 76952](https://wa.me/918369476952)  
-🌐 [jinalcollection.in](https://jinalcollection.in)
+**Jinal Collection**
+Premium Suiting & Shirting Fabrics
+📍 Mangaldas Market, Mumbai
+💬 WhatsApp: +91 83694 76952
+🌐 [jinalcollection.in](https://www.jinalcollection.in)
 
 ---
 
-© 2025 Jinal Collection. All rights reserved.
+## 👩‍💻 Built By
+
+**Jinal Jain** — Freelance Frontend Developer & SEO Executive
+- GitHub: [@jinaljain733-cmd](https://github.com/jinaljain733-cmd)
+- LinkedIn: [linkedin.com/in/jinal-jain-08b70328b](https://linkedin.com/in/jinal-jain-08b70328b)
+
+---
+
+## 📄 License
+
+© 2026 Jinal Collection. All rights reserved.
+
+> This is a **client project**. Code and design are proprietary and may not be reused, copied or redistributed without written permission.
